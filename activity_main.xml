@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.johnlazzarini.courtcounter.MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp">
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:text="Team A"/>
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/team_a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#000000"
+            android:textSize="56dp"
+            android:text="0"
+            android:gravity="center_horizontal"/>
+        <Button
+            android:layout_marginTop="24dp"
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+3 Points"
+            android:onClick="incrementByThreeA"/>
+        <Button
+            android:layout_marginTop="8dp"
+            android:text="+2 Points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="incrementByTwoA"/>
+        <Button
+            android:layout_marginTop="8dp"
+            android:text="+1 Point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="incrementByOneA"/>
+    </LinearLayout>
+<View
+    android:layout_marginTop="16dp"
+    android:layout_width="1dp"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp">
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+            android:text="Team B"/>
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/team_b"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#000000"
+            android:textSize="56dp"
+            android:text="0"
+            android:gravity="center_horizontal"/>
+        <Button
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+3 Points"
+            android:onClick="incrementByThreeB"/>
+        <Button
+            android:layout_marginTop="8dp"
+            android:text="+2 Points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="incrementByTwoB"/>
+        <Button
+            android:layout_marginTop="8dp"
+            android:text="+1 Point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="incrementByOneB"/>
+    </LinearLayout>
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/win_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"/>
+
+    <Button
+        android:layout_marginBottom="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Reset"
+        android:onClick="reset"/>
+</LinearLayout>
